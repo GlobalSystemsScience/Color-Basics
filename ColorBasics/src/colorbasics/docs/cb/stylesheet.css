@@ -1,0 +1,41 @@
+body {
+  font-family: Arial,sans-serif;
+  max-width: 750px;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-style: italic;
+}
+
+p {
+  margin-left: 1em;
+}
+
+img {
+  margin: 0 0 0 1em;
+}
+
+.fr {
+  float: right;
+  margin: 10px 1em 10px 10px;
+}
+
+/* spacer divs keep images from insetting more than desired */
+.spacer {
+  clear: both;
+}
+
+.line {
+  float: left;
+  margin-left: 1em;
+}
+
+/* override regular img margin to keep images and text lined up */
+.line img {
+  margin-left: 0;
+}
+
+.todo {
+  background-color: yellow;
+}

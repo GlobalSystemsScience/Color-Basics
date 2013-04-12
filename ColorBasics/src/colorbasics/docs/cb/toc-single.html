@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Table of contents</title>
+<link rel="stylesheet" href="dtree.css" type="text/css" />
+<script type="text/javascript" src="dtree.js"></script>
+</head>
+<body>
+<h3>Table of contents</h3>
+<div class="dtree">
+<p><b>Single page version</b><br />
+<a href="toc.html" onClick="top.main.location='povr.html';">View help as multiple pages</a><br />
+<p><a href="javascript: d.openAll();">open all</a> | <a href="javascript: d.closeAll();">close all</a></p>
+<script type="text/javascript">
+d = new dTree('d');
+
+d.add(0,-1,"ColorBasics");
+
+d.add(1,0,"Overview of ColorBasics","single.html#povr","","main");
+d.add(2,0,"Overview of tab panels","single.html#tovr","","main");
+d.add(3,0,"Details of tab panels","","","","","",true);
+  d.add(4,3,"Intro tab panel","single.html#intr","","main");
+  d.add(5,3,"Compare colors tab panel","single.html#cmpr","","main");
+  d.add(6,3,"Make colors tab panel","single.html#make","","main");
+  d.add(7,3,"Play with colors tab panel","single.html#play","","main");
+  d.add(8,3,"Test yourself tab panel","single.html#test","","main");
+  d.add(9,3,"Color spaces tab panel","single.html#cspc","","main");
+  d.add(10,3,"Check display's color tab panel","single.html#chkc","","main");
+  d.add(11,3,"About tab panel","single.html#abot","","main");
+d.add(12,0,"Help menu","single.html#help","","main");
+  d.add(13,12,"Open help as PDF");
+  d.add(14,12,"Open help in browser");
+  d.add(15,12,"Individual sections");
+document.write(d);
+</script>
+</div>
+</body>
+</html>
