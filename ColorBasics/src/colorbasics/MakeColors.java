@@ -60,7 +60,7 @@ public class MakeColors extends JPanel implements ActionListener {
   JButton c3JButton[] = new JButton[MAX_SAVED_INDEX];
   JButton resultColor[] = new JButton[MAX_SAVED_INDEX];
   
-  JButton resultDisplay = new JButton("");
+  JLabel resultDisplay = new JLabel();
   ColorSpaceSelector spaceSelector;
   ColorComposer colorComposer;
   
@@ -126,8 +126,8 @@ public class MakeColors extends JPanel implements ActionListener {
     // Use resultDisplay
     // Use disabled button to draw result color rectangles
 //    JButton resultDisplay = new JButton("");
+    resultDisplay.setOpaque(true);
     resultDisplay.setBackground(Color.WHITE);
-    resultDisplay.setEnabled(false);
     resultDisplay.setBounds(columns[4] + 10, rows[3] + 10, columnW[4], columnW[4]);
     makeColors.add(resultDisplay);
     

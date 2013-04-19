@@ -16,9 +16,9 @@ public class ShowImage extends JPanel { // Changing Panel to JPanel
 //  BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
 //   String imageName=bf.readLine();
   File input = new File(imageName);
-      image = ImageIO.read(input);
+      image = ImageIO.read(this.getClass().getResource(imageName));
     } catch (IOException ie) {
-      System.out.println("Error:"+ie.getMessage());
+        ie.printStackTrace();
     }
   }
 

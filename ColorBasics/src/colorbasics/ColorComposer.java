@@ -56,9 +56,9 @@ public class ColorComposer extends JPanel{
   int color1;
   int color2;
   int color3;
-  JButton c1Display = new JButton("");
-  JButton c2Display = new JButton("");
-  JButton c3Display = new JButton("");
+  JLabel c1Display = new JLabel();
+  JLabel c2Display = new JLabel();
+  JLabel c3Display = new JLabel();
 //  JButton resultDisplay = new JButton("");
   Color savedColor;
   boolean isAdvice = false;
@@ -140,8 +140,11 @@ public class ColorComposer extends JPanel{
     // Use c1Display, c2Display, c3Display
     // Use disabled button to draw primary color rectangles
     c1Display.setBackground(Color.BLACK);
+    c1Display.setOpaque(true);
     c2Display.setBackground(Color.BLACK);
+    c2Display.setOpaque(true);
     c3Display.setBackground(Color.BLACK);
+    c3Display.setOpaque(true);
     c1Display.setEnabled(false);
     c2Display.setEnabled(false);
     c3Display.setEnabled(false);
@@ -219,6 +222,7 @@ public class ColorComposer extends JPanel{
         savedColor = new Color(c1, c2, c3);
         if (colorIsVisible) {
           result.setBackground(savedColor);
+          result.repaint();
         }
         break;
       case CMY:

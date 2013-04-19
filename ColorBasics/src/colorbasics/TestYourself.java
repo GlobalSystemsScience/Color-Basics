@@ -492,7 +492,8 @@ public class TestYourself extends JPanel implements ActionListener {
           printWriter = new PrintWriter (new BufferedWriter
                                            (new FileWriter (chooser.getSelectedFile())), true);
         } catch (IOException e) {
-          System.out.println (e);
+            e.printStackTrace();
+          //System.out.println (e);
         } // catch
         
         formatter = new SimpleDateFormat("EEEE, MMMMM d, yyyy hh:mm a");
