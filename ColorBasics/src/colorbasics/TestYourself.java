@@ -114,7 +114,7 @@ public class TestYourself extends JPanel implements ActionListener {
     
     spaceSelector = new ColorSpaceSelector();
     spaceSelector.setTestYourself(this);
-    spaceSelector.setBounds(columns[1], rows[2], 160, rowH[2] + rowH[3]);
+    spaceSelector.setBounds(columns[1], rows[2], 200, rowH[2] + rowH[3]);
     testYourself.add(spaceSelector);
     
     JButton startB = new JButton(startS);

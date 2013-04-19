@@ -105,7 +105,7 @@ public class PlayWithColors extends JPanel implements ActionListener {
 
     spaceSelector = new ColorSpaceSelector();
     spaceSelector.setPlayWithColors(this);
-    spaceSelector.setBounds(columns[1], rows[2], 160, rowH[2]);
+    spaceSelector.setBounds(columns[1], rows[2], 200, rowH[2]+10);
     playWithColors.add(spaceSelector);
     
     JLabel instructionL = new JLabel(instructionS, SwingConstants.LEFT);
